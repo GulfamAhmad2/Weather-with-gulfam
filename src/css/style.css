@@ -1,0 +1,132 @@
+/* ============== GOOGLE FONT ============== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* ============== VARIABLE ============== */
+:root {
+
+    /* ========== COLOR ========== */
+    --bg:#000000;
+    --ellipse-1: linear-gradient(131.03deg, #26D0CE 7.78%, #1A2980 89.77%);
+    --ellipse-2: linear-gradient(90deg, #FF4E50 0%, #F9D423 100%);
+    --ellipse-3: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+    --glass-bg:  linear-gradient(143.98deg, rgba(255, 255, 255, 0.11) 0%, rgba(255, 255, 255, 0.22) 100%);
+    --white:#fff;
+
+    /* ========== COLOR ========== */
+    --body-font:"Poppins", sans-serif;
+
+}
+
+/* ============== Base ============== */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bg);
+    font-family: var(--body-font);
+
+}
+
+.main-site{
+    position: relative;
+    z-index: 10;
+    
+}
+
+
+
+.box{
+    position: relative;
+    width: 30rem;
+    /* width: 100%; */
+    background:var(--glass-bg) ;
+    backdrop-filter: blur(25px);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    z-index: 10;
+    
+}
+
+.heading{
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.search-input{
+    padding: 10px;
+    border: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    outline: none;
+    background-color: rgb(211, 207, 207);
+    text-transform: capitalize;
+    margin-top: 2rem;
+}
+
+.info{
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 4rem;
+}
+
+.city,
+.temprature{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    font-size: 1.5rem;
+    row-gap: 1rem;
+    text-transform: capitalize;
+}
+
+.not-found{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+.ellipse-1{
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    top: -70%;
+    left: -80%;
+    background: var(--ellipse-1);
+    filter: blur(2.5px);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.ellipse-2{
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    bottom: -10%;
+    right: -6%;
+    background: var(--ellipse-2);
+    filter: blur(2.5px);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+
+
+
